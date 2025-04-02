@@ -37,7 +37,7 @@ Both models achieve high classification performance on the validation set.
 | Model        | Accuracy | AUC    |
 | :----------- | :------- | :----- |
 | Standard ViT | 1.0000   | 1.0000 |
-| MoE-ViT      | 0.9985   | (TBD)* |
+| MoE-ViT      | 0.9985   | 1.0000 |
 
 **Evaluation Visuals (Standard ViT):**
 
@@ -47,14 +47,17 @@ Both models achieve high classification performance on the validation set.
 ![Sample5](images/roc_curve.png)
 > **Caption:** ROC Curve for the Standard ViT, achieving an AUC of 1.0000.
 
+![Sample6](images/roc_curve_moe.png)
+> **Caption:** ROC Curve for the MoE-ViT, achieving an AUC of 1.0000.
+
 ## Attention Mechanism Highlights
 
 The models learn to focus on relevant detector regions. MoE-ViT shows more structured, potentially specialized attention patterns.
 
-*(Image: Include one row from `attention_visualization.png` [Sample, CLS Attention, Overlay] here)*
+![image](https://github.com/user-attachments/assets/f166f3a1-d6a2-4c30-8211-84adcf055161)
 > **Caption:** Standard ViT Attention: Focuses broadly on active bands.
 
-*(Image: Include one row from the MoE attention visualization [`output_4_0.png`] here)*
+![image](https://github.com/user-attachments/assets/6d2a93ee-740f-47c8-ba97-0591031a8439)
 > **Caption:** MoE-ViT Attention: Shows more structured, quadrant-like focus, suggesting expert specialization.
 
 ## How to Run
