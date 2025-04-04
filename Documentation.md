@@ -162,7 +162,7 @@ A simple workflow prepares the data for the models.
 
 ## 5. Training Process
 
-*[Diagram: Training Loop Flowchart - User to Create]*
+![Sample5](images/training.png)
 > **Description for Diagram:** Start -> Loop Epochs -> Set model.train() -> Loop Batches in Train Loader -> [Load Batch -> To Device -> Optimizer Zero_grad -> Forward Pass -> Calculate Loss -> Backward Pass -> Optimizer Step -> Accumulate Loss/Metrics] -> End Batch Loop -> Set model.eval() -> Loop Batches in Val Loader -> [Load Batch -> To Device -> No Grad -> Forward Pass -> Calculate Loss -> Accumulate Loss/Metrics] -> End Batch Loop -> Calculate Epoch Metrics -> Scheduler Step -> Check for Best Model -> Save Model -> End Epoch Loop -> Finish.
 
 **Setup:**
