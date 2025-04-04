@@ -67,18 +67,14 @@ The models learn to focus on relevant detector regions. MoE-ViT shows more struc
     git clone <your-repo-url>
     cd <your-repo-directory>
     ```
-2.  **Set up environment:** (Assuming a `requirements.txt` file)
-    ```bash
-    pip install -r requirements.txt
-    ```
+2.  **Set up environment:** 
     *Key requirements: `numpy`, `torch`, `torchvision`, `sklearn`, `matplotlib`, `seaborn`, `tqdm`*
 3.  **Download Data:** Place `Run355456_Dataset.npy` and `Run357479_Dataset.npy` into a `data/` subdirectory.
 4.  **Run Training & Evaluation:** (Assuming notebooks are refactored into a script like `main.py`)
     ```bash
     python main.py
     ```
-    *(Alternatively, provide instructions to run the Jupyter notebooks sequentially)*
-
+    
 ## Detailed Documentation
 
 For a deeper dive into the data exploration, preprocessing, model architectures, and analysis, see the full documentation:
